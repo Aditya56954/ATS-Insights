@@ -1,4 +1,4 @@
-# 🚀 ATS Insight – AI Resume Analyzer (MERN + Gemini AI)
+# 🚀 ATS-Insights – AI Resume Analyzer (MERN + Gemini AI)
 
 Resume Scan is a full-stack AI-powered web application that analyzes resumes using ATS (Applicant Tracking System) principles. Users can upload a PDF or DOCX resume, optionally provide a job description, and receive a detailed AI-generated evaluation including ATS score, keyword analysis, strengths, weaknesses, formatting suggestions, and actionable improvements.
 
