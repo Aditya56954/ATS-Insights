@@ -309,6 +309,3 @@ Passionate about Full Stack Development, Artificial Intelligence, and Building S
 
 ---
 
-# 📜 License
-
-This project is developed for educational and portfolio purposes.
