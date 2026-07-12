@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #faf8f3;
+  color: #1f2421;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(#d8d3c7 1px, transparent 1px),
+    linear-gradient(90deg, #d8d3c7 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: -1px -1px;
+}
+
+::selection {
+  background: #c98a2c;
+  color: #faf8f3;
+}
+
+@keyframes scanline {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.scan-beam {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #c98a2c 20%,
+    #c98a2c 80%,
+    transparent
+  );
+  box-shadow: 0 0 12px 2px rgba(201, 138, 44, 0.7);
+  animation: scanline 1.8s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.gauge-arc {
+  animation: dash 1.2s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scan-beam,
+  .gauge-arc {
+    animation: none !important;
+  }
+}
