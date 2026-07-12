@@ -72,7 +72,7 @@ export default function App() {
 
       <footer className="border-t border-rule py-6 text-center">
         <p className="font-mono text-[10px] uppercase tracking-widest text-inkfade">
-          MERN + Claude · Resume Scan
+         MERN + GEMINI AI • ATS INSIGHTS
         </p>
       </footer>
     </div>
